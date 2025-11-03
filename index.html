@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Arie Drobizki" />
+  <meta name="description" content="Pizza order form for The HTML Pizza Company assignment" />
+  <title>The HTML Pizza Company</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff8f0;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header, footer {
+      background-color: #f4c2c2;
+      color: #7b1e1e;
+      text-align: center;
+      padding: 15px;
+      border-bottom: 2px solid #e63946;
+    }
+
+    footer {
+      border-top: 2px solid #e63946;
+      border-bottom: none;
+      font-size: 14px;
+      color: #555;
+    }
+
+    main {
+      max-width: 700px;
+      margin: 30px auto;
+      background-color: #fff;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    fieldset {
+      border: 2px solid #e63946;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      padding: 15px;
+    }
+
+    legend {
+      font-weight: bold;
+      color: #e63946;
+    }
+
+    label {
+      display: block;
+      margin: 8px 0 4px;
+    }
+
+    input, select, textarea, button {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 12px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      width: auto;
+      margin-right: 6px;
+    }
+
+    button {
+      background-color: #e63946;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #b82e2e;
+    }
+
+    img {
+      display: block;
+      margin: 20px auto;
+      border-radius: 10px;
+      width: 350px;
+    }
+
+    #message {
+      text-align: center;
+      font-size: 18px;
+      color: #28a745;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The HTML Pizza Company</h1>
+    <h2>Build your perfect pizza below 🍕</h2>
+  </header>
+
+  <main>
+    <p>
+      Welcome to <strong>The HTML Pizza Company</strong>! Please fill out the form below to customize your pizza.
+      Whether you like thin crust, deep dish, or extra cheese — we’ve got you covered.
+    </p>
+
+    <img src="https://media.timeout.com/images/102421929/image.jpg" alt="A freshly baked pepperoni pizza" />
+
+    <form id="pizzaForm">
+      <fieldset>
+        <legend>Customer Information</legend>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="e.g. 555-123-4567" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Pizza Details</legend>
+        <label for="quantity">Number of Pizzas:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" required>
+
+        <label for="size">Size:</label>
+        <select id="size" name="size" required>
+          <option value="">--Choose a Size--</option>
+          <option value="small">Small (6 slices)</option>
+          <option value="medium">Medium (8 slices)</option>
+          <option value="large">Large (12 slices)</option>
+        </select>
+
+        <label>Shape:</label>
+        <input type="radio" id="round" name="shape" value="Round" required>
+        <label for="round">Round</label>
+        <input type="radio" id="square" name="shape" value="Square">
+        <label for="square">Square</label>
+
+        <label>Crust Type:</label>
+        <select id="crust" name="crust">
+          <option value="thin">Thin Crust</option>
+          <option value="thick">Thick Crust</option>
+          <option value="stuffed">Stuffed Crust</option>
+          <option value="deep-dish">Deep Dish</option>
+        </select>
+
+        <label>Toppings:</label>
+        <input type="checkbox" id="pepperoni" name="topping" value="Pepperoni"><label for="pepperoni">Pepperoni</label>
+        <input type="checkbox" id="mushrooms" name="topping" value="Mushrooms"><label for="mushrooms">Mushrooms</label>
+        <input type="checkbox" id="onions" name="topping" value="Onions"><label for="onions">Onions</label>
+        <input type="checkbox" id="olives" name="topping" value="Olives"><label for="olives">Olives</label>
+        <input type="checkbox" id="bacon" name="topping" value="Bacon"><label for="bacon">Bacon</label>
+        <input type="checkbox" id="extra-cheese" name="topping" value="Extra Cheese"><label for="extra-cheese">Extra Cheese</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Order Preferences</legend>
+        <label>Order Type:</label>
+        <input type="radio" id="takeout" name="orderType" value="Takeout" required>
+        <label for="takeout">Takeout</label>
+        <input type="radio" id="delivery" name="orderType" value="Delivery">
+        <label for="delivery">Delivery</label>
+        <input type="radio" id="eatin" name="orderType" value="Eat-in">
+        <label for="eatin">Eat-in</label>
+
+        <label for="instructions">Special Instructions:</label>
+        <textarea id="instructions" name="instructions" rows="3" placeholder="Anything else we should know?"></textarea>
+      </fieldset>
+
+      <button type="submit">Place Order</button>
+      <button type="reset">Reset</button>
+    </form>
+
+    <p id="message"></p>
+  </main>
+
+  <footer>
+    <p><small>© 2025 The HTML Pizza Company — Created by Arie Drobizki</small></p>
+  </footer>
+
+  <script>
+    const form = document.getElementById("pizzaForm");
+    const message = document.getElementById("message");
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault();
+      const name = document.getElementById("name").value;
+      const size = document.getElementById("size").value;
+      const toppings = Array.from(document.querySelectorAll('input[name="topping"]:checked'))
+                            .map(t => t.value)
+                            .join(", ") || "no toppings";
+      message.textContent = `Thanks, ${name}! Your ${size} pizza with ${toppings} has been ordered. 🍕`;
+    });
+
+    form.addEventListener("reset", function() {
+      message.textContent = "";
+    });
+  </script>
+</body>
+</html>
+
