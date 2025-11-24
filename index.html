@@ -1,208 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="author" content="Arie Drobizki" />
-  <meta name="description" content="Pizza order form for The HTML Pizza Company assignment" />
-  <title>The HTML Pizza Company</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #fff8f0;
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Avengers (2012) — Movie Poster</title>
 
-    header, footer {
-      background-color: #f4c2c2;
-      color: #7b1e1e;
-      text-align: center;
-      padding: 15px;
-      border-bottom: 2px solid #e63946;
-    }
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
 
-    footer {
-      border-top: 2px solid #e63946;
-      border-bottom: none;
-      font-size: 14px;
-      color: #555;
-    }
+            /*Background image of the poster */
+            background-image: url("avengers.jpg"); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
 
-    main {
-      max-width: 700px;
-      margin: 30px auto;
-      background-color: #fff;
-      padding: 20px 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
+            text-shadow: 2px 2px 4px black;
+        }
 
-    fieldset {
-      border: 2px solid #e63946;
-      border-radius: 8px;
-      margin-bottom: 20px;
-      padding: 15px;
-    }
+        .poster-container {
+            background: rgba(0, 0, 0, 0.65);
+            padding: 30px;
+            max-width: 800px;
+            margin: 40px auto;
+            border-radius: 12px;
+        }
 
-    legend {
-      font-weight: bold;
-      color: #e63946;
-    }
+        h1 {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 10px;
+        }
 
-    label {
-      display: block;
-      margin: 8px 0 4px;
-    }
+        h2 {
+            font-size: 1.6rem;
+            margin-top: 25px;
+            text-align: center;
+        }
 
-    input, select, textarea, button {
-      width: 100%;
-      padding: 8px;
-      margin-bottom: 12px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      font-size: 15px;
-    }
+        p {
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
 
-    input[type="radio"],
-    input[type="checkbox"] {
-      width: auto;
-      margin-right: 6px;
-    }
+        .cast-list {
+            text-align: center;
+            font-size: 1.2rem;
+        }
 
-    button {
-      background-color: #e63946;
-      color: white;
-      border: none;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
+        a {
+            color: #4dc3ff;
+        }
 
-    button:hover {
-      background-color: #b82e2e;
-    }
-
-    img {
-      display: block;
-      margin: 20px auto;
-      border-radius: 10px;
-      width: 350px;
-    }
-
-    #message {
-      text-align: center;
-      font-size: 18px;
-      color: #28a745;
-      margin-top: 15px;
-    }
-  </style>
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
+
 <body>
-  <header>
-    <h1>The HTML Pizza Company</h1>
-    <h2>Build your perfect pizza below 🍕</h2>
-  </header>
 
-  <main>
-    <p>
-      Welcome to <strong>The HTML Pizza Company</strong>! Please fill out the form below to customize your pizza.
-      Whether you like thin crust, deep dish, or extra cheese — we’ve got you covered.
-    </p>
+    <div class="poster-container">
 
-    <img src="https://media.timeout.com/images/102421929/image.jpg" alt="A freshly baked pepperoni pizza" />
+        <h1>MARVEL'S THE AVENGERS (2012)</h1>
 
-    <form id="pizzaForm">
-      <fieldset>
-        <legend>Customer Information</legend>
-        <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" required>
+        <h2>Cast</h2>
+        <p class="cast-list">
+            Robert Downey Jr. • Chris Evans • Mark Ruffalo • Chris Hemsworth • 
+            Scarlett Johansson • Jeremy Renner • Tom Hiddleston • Samuel L. Jackson
+        </p>
 
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" placeholder="e.g. 555-123-4567" required>
+        <h2>Tagline</h2>
+        <p>
+            “When an unexpected enemy emerges and threatens global safety, 
+            Nick Fury and his team must form the world’s greatest superhero alliance.”
+        </p>
 
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required>
-      </fieldset>
+        <h2>About the Movie</h2>
+        <p>
+            The Avengers brings together Iron Man, Captain America, Hulk, Thor, Black Widow, 
+            and Hawkeye in an action-packed battle to save Earth. Directed by Joss Whedon, 
+            the film is a milestone in the Marvel Cinematic Universe.
+        </p>
 
-      <fieldset>
-        <legend>Pizza Details</legend>
-        <label for="quantity">Number of Pizzas:</label>
-        <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" required>
+        <h2>Links</h2>
+        <p>
+            • <a href="https://www.marvel.com/movies/the-avengers" target="_blank">Official Marvel Page</a><br>
+            • <a href="https://www.imdb.com/title/tt0848228/" target="_blank">IMDB Reviews</a><br>
+            • <a href="https://www.rottentomatoes.com/m/marvels_the_avengers" target="_blank">Rotten Tomatoes</a>
+        </p>
 
-        <label for="size">Size:</label>
-        <select id="size" name="size" required>
-          <option value="">--Choose a Size--</option>
-          <option value="small">Small (6 slices)</option>
-          <option value="medium">Medium (8 slices)</option>
-          <option value="large">Large (12 slices)</option>
-        </select>
+        <div class="footer">
+            <p>Movie Poster Project — Created by Arie</p>
+        </div>
 
-        <label>Shape:</label>
-        <input type="radio" id="round" name="shape" value="Round" required>
-        <label for="round">Round</label>
-        <input type="radio" id="square" name="shape" value="Square">
-        <label for="square">Square</label>
+    </div>
 
-        <label>Crust Type:</label>
-        <select id="crust" name="crust">
-          <option value="thin">Thin Crust</option>
-          <option value="thick">Thick Crust</option>
-          <option value="stuffed">Stuffed Crust</option>
-          <option value="deep-dish">Deep Dish</option>
-        </select>
-
-        <label>Toppings:</label>
-        <input type="checkbox" id="pepperoni" name="topping" value="Pepperoni"><label for="pepperoni">Pepperoni</label>
-        <input type="checkbox" id="mushrooms" name="topping" value="Mushrooms"><label for="mushrooms">Mushrooms</label>
-        <input type="checkbox" id="onions" name="topping" value="Onions"><label for="onions">Onions</label>
-        <input type="checkbox" id="olives" name="topping" value="Olives"><label for="olives">Olives</label>
-        <input type="checkbox" id="bacon" name="topping" value="Bacon"><label for="bacon">Bacon</label>
-        <input type="checkbox" id="extra-cheese" name="topping" value="Extra Cheese"><label for="extra-cheese">Extra Cheese</label>
-      </fieldset>
-
-      <fieldset>
-        <legend>Order Preferences</legend>
-        <label>Order Type:</label>
-        <input type="radio" id="takeout" name="orderType" value="Takeout" required>
-        <label for="takeout">Takeout</label>
-        <input type="radio" id="delivery" name="orderType" value="Delivery">
-        <label for="delivery">Delivery</label>
-        <input type="radio" id="eatin" name="orderType" value="Eat-in">
-        <label for="eatin">Eat-in</label>
-
-        <label for="instructions">Special Instructions:</label>
-        <textarea id="instructions" name="instructions" rows="3" placeholder="Anything else we should know?"></textarea>
-      </fieldset>
-
-      <button type="submit">Place Order</button>
-      <button type="reset">Reset</button>
-    </form>
-
-    <p id="message"></p>
-  </main>
-
-  <footer>
-    <p><small>© 2025 The HTML Pizza Company — Created by Arie Drobizki</small></p>
-  </footer>
-
-  <script>
-    const form = document.getElementById("pizzaForm");
-    const message = document.getElementById("message");
-
-    form.addEventListener("submit", function(event) {
-      event.preventDefault();
-      const name = document.getElementById("name").value;
-      const size = document.getElementById("size").value;
-      const toppings = Array.from(document.querySelectorAll('input[name="topping"]:checked'))
-                            .map(t => t.value)
-                            .join(", ") || "no toppings";
-      message.textContent = `Thanks, ${name}! Your ${size} pizza with ${toppings} has been ordered. 🍕`;
-    });
-
-    form.addEventListener("reset", function() {
-      message.textContent = "";
-    });
-  </script>
 </body>
 </html>
 
